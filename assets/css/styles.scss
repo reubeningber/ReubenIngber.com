@@ -38,6 +38,7 @@
 .work-item,
 .notes-item {
   margin-bottom: 15px;
+  border-bottom: 1px solid grey;
   @include outer-container
 }
 
@@ -91,7 +92,6 @@
 .notes-item {
   text-align: center;
   padding: 0 0 15px 0;
-  border-bottom: 1px solid grey;
   
   &:last-child {
     border-bottom: none;
