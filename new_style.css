@@ -337,6 +337,32 @@ footer,
     content: "";
     display: table; }
 
+* {
+  margin: 0; }
+
+html, body {
+  height: 100%; }
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto -194px;
+  /* the bottom margin is the negative value of the footer's height */ }
+
+.footer, .push {
+  height: 194px;
+  /* .push must be the same height as .footer */ }
+
+.recent-col {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .recent-col:last-child {
+    margin-right: 0; }
+
 .site-header {
   margin: 20px auto;
   border-bottom: 1px solid #000000; }
@@ -403,7 +429,7 @@ footer,
     text-decoration: underline; }
 
 footer {
-  background: blue;
+  background: #000000;
   color: white; }
 
 .site-footer {
@@ -453,6 +479,20 @@ footer {
   font-family: 'Open Sans', sans-serif;
   display: block;
   margin: 0 0 10px 0; }
+
+.grid {
+  display: flex;
+  flex-flow: row wrap;
+  margin: -0.1rem; }
+  .grid .grid-box-wrap {
+    flex-basis: 20rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+    overflow: hidden;
+    padding: 0 0.1rem 0.2rem; }
+  .grid .grid-box {
+    background: whitesmoke;
+    text-align: center; }
 
 .section-heading {
   text-align: center; }

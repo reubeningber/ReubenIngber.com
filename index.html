@@ -4,7 +4,7 @@
 		{% for post in site.pages.work.posts  %}
 		<article class="work-item">
 		  <div class="work-item__image">
-		    <img src="http://placehold.it/350x200" alt="" />
+		    <img src="{{post.meta['Featured Image']}}" alt="" />
 		  </div>
 		  <div class="work-item__content">
 		    <h3 class="work-item__title">{{post.title}}</h3>
