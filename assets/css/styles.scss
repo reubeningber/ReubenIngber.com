@@ -1,0 +1,125 @@
+// Reset 
+@import "vendor/_meyer-reset";
+
+// Bourbon Neat Bitters
+@import "vendor/bourbon/_bourbon";
+@import "vendor/bourbon/neat/_neat";
+@import "vendor/bourbon/base/base";
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700|Montserrat:400,700);
+
+// Base 
+@import "base-variables";
+@import "base";
+
+
+// Layouts
+@import "layout/layout";
+
+// Modules
+@import "modules/header";
+@import "modules/footer";
+@import "modules/entry";
+
+
+
+
+// Work 
+.section-heading {
+  text-align: center;
+}
+
+.work-item,
+.notes-item {
+  margin-bottom: 15px;
+  @include outer-container
+}
+
+.work-item__image {
+  @include span-columns(4 of 8);
+
+  @include media(max-width $tablet) {
+      text-align: center;
+      @include span-columns(10);
+      @include shift(2);
+     }
+
+    @include media(max-width $mobile) {
+      @include span-columns(12);
+      @include shift(0);
+    }
+  
+  img {
+    display: block;
+    margin: 0 auto 10px auto;
+    max-width: 100%;
+  }
+}
+
+.work-item__content {
+  @include span-columns(4 of 8);
+  padding: 40px 0 0 0;
+
+  @include media(max-width $tablet) {
+      @include span-columns(10);
+      @include shift(2);
+      padding: 0;
+    }
+
+  @include media(max-width $mobile) {
+    @include span-columns(12);
+    @include shift(0);
+  }
+}
+
+.work-item__title {
+  margin: 0;
+  padding: 0;
+}
+
+.work-item__intro {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.notes-item {
+  text-align: center;
+  padding: 0 0 15px 0;
+  border-bottom: 1px solid grey;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.notes-item__title {
+  margin: 0;
+}
+.notes-item__title a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.notes-item__meta {
+  color: grey;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+
+
+// Helpers
+
+.ui-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inline-list li{
+  display: inline;
+}
+

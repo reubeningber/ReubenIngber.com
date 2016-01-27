@@ -1,0 +1,39 @@
+{% capture content %} 
+	<section class="work">
+		<h2 class="section-heading">Recent Work</h2>
+		{% for post in site.pages.work.posts  %}
+		<article class="work-item">
+		  <div class="work-item__image">
+		    <img src="http://placehold.it/350x200" alt="" />
+		  </div>
+		  <div class="work-item__content">
+		    <h3 class="work-item__title">{{post.title}}</h3>
+		    <p class="work-item__intro">{{post.meta['Intro']}}</p>
+		    <a href="{{post.url}}" class="work-itemm__btn">View More</a>
+		  </div>
+		</article>
+		{% endfor %}
+	</section>
+  
+  <section class="notes">
+    <h2 class="section-heading">Recent Notes</h2>
+    {% for post in site.pages.notes.posts %}
+    <article class="notes-item">
+      <h3 class="notes-item__title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <span class="notes-item__meta">
+      	{{ date | date: '%B %d, %Y'}} &nbsp; 
+		{% for tagset in post.taxonomy %}
+			{% for tag in post.tagset %}
+				<a href="{{tag.url}}">{{tag.value}}</a>
+			{% endfor %}
+		{% endfor %}
+      </span>
+      <a href="{{ post.url }}" class="notes-item__btn">Read More</a>
+    </article>
+    {% endfor %}
+  </section>
+</div>
+{% endcapture %}
+
+
+{% include 'layouts/default' %}

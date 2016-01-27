@@ -1,0 +1,21 @@
+// Footer 
+
+footer {
+  background: blue;
+  color: white;
+}
+
+.site-footer {
+  @include span-columns(8);
+  @include shift(2);
+  padding: 50px 0;
+}
+
+.site-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-link {
+  padding: 0 5px;
+}
