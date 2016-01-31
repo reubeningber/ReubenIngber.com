@@ -9,6 +9,10 @@
         <title>Reuben A. Ingber | Front-End Web Developer</title>
         <meta name="description" content="Reuben Ingber is a front end web developer and designer, currently looking for full time &amp; freelance opportunities">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        {% if meta.redirect %}
+          <meta http-equiv="refresh" content="0;url={{meta.redirect}}">
+        {% endif %}
 
         <!-- Place this data between the <head> tags of your website -->
         <title>Reuben A. Ingber | Front-End Web Developer</title>
@@ -37,17 +41,17 @@
 		<link rel="stylesheet" href="/new_style.css">
 
     </head>
-    <body class="wrapper">
+    <body>
+        <div class="wrapper">
 		{% include 'includes/header' %}
         <div class="main-content">
             <div class="main-content-inner">
                 {{ content }}        
             </div>
         </div>
-        </div>
 
 		{% include 'includes/footer' %}
-
+        </div>
 
 
 		<script src="assets/js/vendor/jquery-1.11.1.min.js"></script>

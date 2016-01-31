@@ -35,11 +35,23 @@
   text-align: center;
 }
 
+.work__homepage {
+  text-align: center;
+}
+
 .work-item,
 .notes-item {
   margin-bottom: 15px;
   border-bottom: 1px solid grey;
-  @include outer-container
+  @include outer-container;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.work-item {
+  text-align: left;
 }
 
 .work-item__image {
@@ -82,6 +94,11 @@
 .work-item__title {
   margin: 0;
   padding: 0;
+
+  a {
+    color: $black;
+    text-decoration: none;
+  }
 }
 
 .work-item__intro {
@@ -92,10 +109,6 @@
 .notes-item {
   text-align: center;
   padding: 0 0 15px 0;
-  
-  &:last-child {
-    border-bottom: none;
-  }
 }
 
 .notes-item__title {
@@ -126,5 +139,21 @@
 
 .inline-list li{
   display: inline;
+}
+
+.more-link {
+  width: auto;
+  text-align: center;
+  background: $black;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 1px solid black;
+
+  &:hover {
+    background: #fff;
+    color: $black;
+    border: 1px solid black;
+  }
 }
 
