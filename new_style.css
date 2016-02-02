@@ -493,11 +493,26 @@ footer {
     background: whitesmoke;
     text-align: center; }
 
+.instagram-feed__item {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  float: left; }
+  .instagram-feed__item:last-child {
+    margin-right: 0; }
+
 .section-heading {
   text-align: center; }
 
+.work__homepage,
+.notes__homepage {
+  margin: 40px auto;
+  text-align: center;
+  padding: 15px; }
+
 .work__homepage {
-  text-align: center; }
+  border-bottom: 1px solid grey; }
 
 .work-item,
 .notes-item {
@@ -511,9 +526,10 @@ footer {
     clear: both;
     content: "";
     display: table; }
-  .work-item:last-child,
-  .notes-item:last-child {
-    border-bottom: none; }
+  .work-item.last,
+  .notes-item.last {
+    border-bottom: none;
+    margin-bottom: 30px; }
 
 .work-item {
   text-align: left; }

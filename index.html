@@ -1,43 +1,6 @@
 {% capture content %} 
-	<section class="work__homepage">
-		<h2 class="section-heading">Recent Work</h2>
-		{% for post in site.pages.work.posts limit:3 %}
-		<article class="work-item{% if site.pages.works.posts  %} last-post{% endif %}">
-		  <div class="work-item__image">
-		    <a href="{{post.url}}"><img src="{{post.meta['Featured Image']}}" alt="" /></a>
-		  </div>
-		  <div class="work-item__content">
-		    <h3 class="work-item__title"><a href="{{post.url}}">{{post.title}}</a></h3>
-		    <p class="work-item__intro">{{post.meta['Intro']}}</p>
-		    <a href="{{post.url}}" class="work-itemm__btn">View More</a>
-		  </div>
-		</article>
-		{% endfor %}
-
-		<a class="more-link" href="{{site.pages.work.url}}">More Projects <i class="fa fa-caret-right"></i>
-</a>
-	</section>
-  
-  <section class="notes">
-    <h2 class="section-heading">Recent Notes</h2>
-    {% for post in site.pages.notes.posts %}
-    <article class="notes-item">
-      <h3 class="notes-item__title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <span class="notes-item__meta">
-      	{{ date | date: '%B %d, %Y'}} &nbsp; 
-		{% for tagset in post.taxonomy %}
-			{% for tag in post.tagset %}
-				<a href="{{tag.url}}">{{tag.value}}</a>
-			{% endfor %}
-		{% endfor %}
-      </span>
-      <a href="{{ post.url }}" class="notes-item__btn">Read More</a>
-    </article>
-    {% endfor %}
-    <a class="more-link" href="{{site.pages.notes.url}}">More Notes <i class="fa fa-caret-right"></i>
-</a>
-  </section>
-</div>
+	{% include 'includes/home_work' %}
+	{% include 'includes/home_notes' %}
 {% endcapture %}
 
 

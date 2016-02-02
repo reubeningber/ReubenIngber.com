@@ -1,0 +1,18 @@
+<section class="notes__homepage">
+	<h2 class="section-heading">Recent Notes</h2>
+	{% for post in site.pages.notes.posts %}
+	<article class="notes-item{% if forloop.last == true %} last{% endif %}">
+	  <h3 class="notes-item__title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+	  <span class="notes-item__meta">
+	  	{{ date | date: '%B %d, %Y'}} &nbsp; 
+		{% for tagset in post.taxonomy %}
+			{% for tag in post.tagset %}
+				<a href="{{tag.url}}">{{tag.value}}</a>
+			{% endfor %}
+		{% endfor %}
+	  </span>
+	  <a href="{{ post.url }}" class="notes-item__btn">Read More <i class="fa fa-caret-right"></i></a>
+	</article>
+	{% endfor %}
+	<a class="more-link" href="{{site.pages.notes.url}}">More Notes <i class="fa fa-caret-right"></i></a>
+</section>

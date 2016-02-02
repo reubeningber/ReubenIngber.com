@@ -1,0 +1,8 @@
+// .instagram-feed {
+// 	@include span-columns(4);
+// }
+
+.instagram-feed__item {
+	@include span-columns(2);
+	float: left;
+}

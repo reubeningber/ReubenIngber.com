@@ -25,8 +25,7 @@
 @import "modules/footer";
 @import "modules/entry";
 @import "modules/image-grid";
-
-
+@import "modules/instagram-feed";
 
 
 
@@ -35,18 +34,25 @@
   text-align: center;
 }
 
-.work__homepage {
+.work__homepage, 
+.notes__homepage {
+  margin: 40px auto;
   text-align: center;
+  padding: 15px;
 }
 
+.work__homepage {
+    border-bottom: 1px solid grey;
+}
 .work-item,
 .notes-item {
   margin-bottom: 15px;
   border-bottom: 1px solid grey;
   @include outer-container;
 
-  &:last-child {
+  &.last {
     border-bottom: none;
+    margin-bottom: 30px;
   }
 }
 

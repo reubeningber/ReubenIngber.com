@@ -43,20 +43,22 @@
     </head>
     <body>
         <div class="wrapper">
-		{% include 'includes/header' %}
-        <div class="main-content">
-            <div class="main-content-inner">
-                {{ content }}        
+    		{% include 'includes/header' %}
+            <div class="main-content">
+                <div class="main-content-inner">
+                    {{ content }}        
+                </div>
             </div>
-        </div>
 
+        </div>
 		{% include 'includes/footer' %}
-        </div>
 
-
-		<script src="assets/js/vendor/jquery-1.11.1.min.js"></script>
+<!-- 
 		<script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
 		<script src="assets/js/vendor/masonry.pkgd.min.js"></script>
+ -->
+        <script src="assets/js/vendor/jquery-1.11.1.min.js"></script>
+        <script src="assets/js/vendor/instafeed.js"></script>
 		<script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
 		<script src="assets/js/scripts.js"></script>
     </body>
