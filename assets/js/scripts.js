@@ -26,7 +26,9 @@
 
 $(document).ready(function () {
   
-  	// Instagram
+  	/*-------------------------------------------- */
+	/** Instagram */
+	/*-------------------------------------------- */
 	var feed = new Instafeed({
 	    get: 'user',
         userId: '1920699',
@@ -36,4 +38,19 @@ $(document).ready(function () {
 	});
 	feed.run();
 
+	/*-------------------------------------------- */
+	/** Twitter */
+	/*-------------------------------------------- */
+
+	var twitterConfig = {
+		"id": '694661085845151744',
+		"domId": 'tw-widget',
+		"maxTweets": 8,
+		"enableLinks": true,
+		"showImages": false,
+		"showUser": false,
+		"showInteraction": true
+	};
+
+	twitterFetcher.fetch(twitterConfig);
 });
