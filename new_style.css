@@ -259,7 +259,6 @@ h6,
   font-weight: 700; }
 
 p {
-  font-size: 125%;
   margin-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400; }
@@ -484,6 +483,8 @@ footer {
   line-height: 1;
   font-size: 24px;
   color: grey; }
+  .work-index .entry-item__intro {
+    font-size: 18px; }
 
 .entry-item__meta {
   color: grey;

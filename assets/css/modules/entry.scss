@@ -38,6 +38,10 @@
 	line-height: 1;
     font-size: 24px;
     color: grey;
+
+	.work-index & {
+		font-size: 18px;
+	}
 }
 
 .entry-item__meta {
