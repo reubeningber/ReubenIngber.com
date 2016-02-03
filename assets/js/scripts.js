@@ -23,7 +23,7 @@ $(document).ready(function () {
 		"enableLinks": true,
 		"showImages": false,
 		"showUser": false,
-		"showInteraction": true
+		"showInteraction": false
 	};
 
 	twitterFetcher.fetch(twitterConfig);

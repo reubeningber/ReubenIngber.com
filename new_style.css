@@ -364,6 +364,14 @@ html, body {
   width: 31.76157%; }
   .recent-col:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 500px) {
+    .recent-col {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .recent-col:last-child {
+        margin-right: 0; } }
 
 .site-header {
   margin: 20px auto;
@@ -506,6 +514,26 @@ footer {
   float: left; }
   .instagram-feed__item:last-child {
     margin-right: 0; }
+
+.tweet-item {
+  border-bottom: 1px solid grey;
+  margin-bottom: 10px; }
+  .tweet-item:last-child {
+    border-bottom: none; }
+
+.tweet {
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 1; }
+
+.timePosted {
+  font-size: 10px;
+  margin-bottom: 10px; }
+  .timePosted a {
+    color: grey; }
+    .timePosted a:hover {
+      color: #000000;
+      text-decoration: underline; }
 
 .section-heading {
   text-align: center; }

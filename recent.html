@@ -2,7 +2,7 @@
     {{body}}
 
     <div class="recent-col">
-    <h3>Recent Posts</h3>
+    <h4>Recent Posts</h4>
     <ui class="ui-list">
 		{% for post in site.pages.notes.posts limit:5 %}
 		<li class="entry-item">
@@ -11,7 +11,7 @@
 		</li>	
 		{% endfor %}
     </ui>
-    <h3>Recent Work</h3>
+    <h4>Recent Work</h4>
     <ui class="ui-list">
       {% for post in site.pages.work.posts limit:5 %}
 		<li class="entry-item">
@@ -22,14 +22,14 @@
   
   </div>
    <div class="recent-col">
-    <h3>Instagram</h3>
+    <h4>Instagram</h4>
     <ul class="ui-list instagram-feed" id="instafeed">
       
     </ul>
   
   </div>
    <div class="recent-col">
-    <h3>Twitter</h3> 
+    <h4>Twitter</h4> 
     <ul class="ui-list" id="tw-widget"></ul> 
   </div>
 {% endcapture %}
