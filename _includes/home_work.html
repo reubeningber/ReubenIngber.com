@@ -1,9 +1,10 @@
 <section class="work__homepage">
 	<h2 class="section-heading">Recent Work</h2>
 	
+	<div class="work-items-container">
 	{% for post in site.pages.work.posts %}
 	{% if post.meta['Featured'] == 'yes' %}
-	<article class="work-item{% if forloop.last == true %} last{% endif %}">
+	<article class="work-item">
 	  <div class="work-item__image">
 	    <a href="{{post.url}}"><img src="{{post.meta['Featured Image']}}" alt="" /></a>
 	  </div>
@@ -15,6 +16,7 @@
 	</article>
 	{% endif %}
 	{% endfor %}
+	</div>
 
 	<a class="more-link" href="{{site.pages.work.url}}">More Projects <i class="fa fa-caret-right"></i></a>
 </section>

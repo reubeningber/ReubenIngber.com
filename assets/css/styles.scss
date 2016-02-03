@@ -52,10 +52,12 @@
   border-bottom: 1px solid grey;
   @include outer-container;
 
-  &.last {
+  &.last,
+  &:last-child {
     border-bottom: none;
     margin-bottom: 30px;
   }
+
 }
 
 .work-item {

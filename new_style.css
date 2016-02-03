@@ -560,8 +560,9 @@ footer {
     clear: both;
     content: "";
     display: table; }
-  .work-item.last,
-  .notes-item.last {
+  .work-item.last, .work-item:last-child,
+  .notes-item.last,
+  .notes-item:last-child {
     border-bottom: none;
     margin-bottom: 30px; }
 
