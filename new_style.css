@@ -265,7 +265,7 @@ p {
 
 a {
   font-family: 'Open Sans', sans-serif;
-  color: #006699; }
+  color: #000000; }
 
 a:hover {
   color: #000000; }
@@ -685,5 +685,12 @@ footer {
     background: #fff;
     color: #000000;
     border: 1px solid black; }
+
+.entry-nav a:hover {
+  text-decoration: underline; }
+.entry-nav .prev-link {
+  float: left; }
+.entry-nav .next-link {
+  float: right; }
 
 /*# sourceMappingURL=new_style.css.map */

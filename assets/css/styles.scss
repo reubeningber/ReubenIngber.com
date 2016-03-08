@@ -137,8 +137,6 @@
   margin: 0 0 10px 0;
 }
 
-
-
 // Helpers
 
 .ui-list {
@@ -164,6 +162,23 @@
     background: #fff;
     color: $black;
     border: 1px solid black;
+  }
+}
+
+// Entry Nav 
+
+.entry-nav {
+
+  a:hover {
+     text-decoration: underline;
+  }
+  
+  .prev-link {
+    float: left;
+  }
+
+  .next-link {
+    float: right;
   }
 }
 
