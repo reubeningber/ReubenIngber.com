@@ -439,6 +439,7 @@ html, body {
     border-bottom: 1px solid #000000; }
 
 footer {
+  margin-top: 25px;
   background: #000000;
   color: white; }
 
