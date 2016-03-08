@@ -1,8 +1,9 @@
-// .instagram-feed {
-// 	@include span-columns(4);
-// }
-
-.instagram-feed__item {
-	@include span-columns(2);
+.instgram-feed__item {
+	width: 49%;
 	float: left;
+
+	&:nth-child(odd) {
+		margin-right: 2%;
+	}
 }
+

@@ -1,4 +1,7 @@
 {% capture content %}
+
+  {{body}}
+
   {% for post in posts %}
     <article class="entry-item notes-index">
       <span class="entry-item__meta">{{post.date | date: "%b %d, %Y"}}</span>
