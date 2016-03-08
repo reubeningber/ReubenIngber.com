@@ -470,6 +470,12 @@ footer {
       width: 100%;
       margin-left: 0; } }
 
+.entry-item.work-index {
+  border-bottom: 1px solid #000000;
+  margin-bottom: 10px; }
+  .entry-item.work-index:last-child {
+    border-bottom: none; }
+
 .entry-item__title {
   margin: 0 0 5px 0;
   padding: 0 0 5px 0; }

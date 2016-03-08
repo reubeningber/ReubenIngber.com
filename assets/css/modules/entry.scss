@@ -14,8 +14,15 @@
 	}
 } 
 
-.entry__item {
+.entry-item {
+	&.work-index {
+		border-bottom: 1px solid $black;
+		margin-bottom: 10px;
 
+		&:last-child {
+			border-bottom: none;
+		}
+	}
 }
 
 .entry-item__title {
