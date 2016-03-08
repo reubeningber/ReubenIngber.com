@@ -470,10 +470,10 @@ footer {
       width: 100%;
       margin-left: 0; } }
 
-.entry-item.work-index {
+.entry-item {
   border-bottom: 1px solid #000000;
-  margin-bottom: 10px; }
-  .entry-item.work-index:last-child {
+  margin-bottom: 10px !important; }
+  .entry-item:last-child {
     border-bottom: none; }
 
 .entry-item__title {
@@ -489,10 +489,8 @@ footer {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   line-height: 1;
-  font-size: 24px;
+  font-size: 18px;
   color: grey; }
-  .work-index .entry-item__intro {
-    font-size: 18px; }
 
 .entry-item__meta {
   color: grey;

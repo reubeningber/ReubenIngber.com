@@ -15,13 +15,11 @@
 } 
 
 .entry-item {
-	&.work-index {
-		border-bottom: 1px solid $black;
-		margin-bottom: 10px;
+	border-bottom: 1px solid $black;
+	margin-bottom: 10px !important;
 
-		&:last-child {
-			border-bottom: none;
-		}
+	&:last-child {
+		border-bottom: none;
 	}
 }
 
@@ -45,12 +43,8 @@
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	line-height: 1;
-    font-size: 24px;
+    font-size: 18px;
     color: grey;
-
-	.work-index & {
-		font-size: 18px;
-	}
 }
 
 .entry-item__meta {
