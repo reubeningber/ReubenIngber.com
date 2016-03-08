@@ -429,13 +429,14 @@ html, body {
   text-align: right; }
 
 .site-nav__link {
-  padding: 0 5px;
+  padding: 0 5px 5px 5px;
   color: black;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
   .site-nav__link:hover {
-    text-decoration: underline; }
+    text-decoration: none;
+    border-bottom: 1px solid #000000; }
 
 footer {
   background: #000000;
