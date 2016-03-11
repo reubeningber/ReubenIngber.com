@@ -40,11 +40,12 @@
 .notes__homepage {
   margin: 40px auto;
   text-align: center;
-  padding: 15px;
 }
 
 .work__homepage {
     border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    padding: 40px 0;
 }
 .work-item,
 .notes-item {
