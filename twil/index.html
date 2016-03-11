@@ -1,0 +1,17 @@
+{% capture content %}
+
+  {{body}}
+
+  <section class="posts">
+  {% for post in posts %}
+    <article class="entry-item notes-index">
+      <header><h2 class="entry-item__title"><a href="{{post.url}}">{{post.title}}</a></h2></header>
+      {% if post.meta['Intro'] %}
+      <p class="entry-item__intro">{{post.meta['Intro']}}</p>
+      {% endif %}
+    </article>
+  {% endfor %}
+{% endcapture %}
+</section>
+
+{% include 'layouts/default' %}

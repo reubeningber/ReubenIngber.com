@@ -83,3 +83,11 @@ ul {
 em {
   font-style: italic;
 }
+
+blockquote {
+  border-bottom: 1px solid $black;
+
+  p {
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,12 @@
+{% capture content %}
+   <article class="entry-item">
+	  <header><h2 class="entry-item__title"><a href="{{url}}">The Week of {{title}}</a></h2></header>
+	  {{body}}
+	</article>	
+
+	<nav class="entry-nav">
+        {% if previous %}<a href="{{ previous.url }}" class="prev-link">Previous</a>{% endif %}
+        {% if next %}<a href="{{ next.url }}" class="next-link">Next</a>{% endif %}
+    </nav>
+{% endcapture %}
+{% include 'layouts/default' %}

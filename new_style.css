@@ -287,6 +287,11 @@ ul {
 em {
   font-style: italic; }
 
+blockquote {
+  border-bottom: 1px solid #000000; }
+  blockquote p {
+    font-weight: 600; }
+
 .site-header,
 footer,
 .main-content {
@@ -690,5 +695,8 @@ footer {
   float: left; }
 .entry-nav .next-link {
   float: right; }
+
+.posts {
+  margin: 25px 0; }
 
 /*# sourceMappingURL=new_style.css.map */
