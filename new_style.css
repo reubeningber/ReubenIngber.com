@@ -266,10 +266,11 @@ p {
 
 a {
   font-family: 'Open Sans', sans-serif;
-  color: #191919; }
+  color: #191919;
+  font-weight: 700; }
 
 a:hover {
-  color: #191919; }
+  color: grey; }
 
 a.active {
   color: #191919; }
