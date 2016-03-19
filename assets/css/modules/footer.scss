@@ -15,6 +15,11 @@ footer {
 .site-footer a {
   color: white;
   text-decoration: none;
+  font-weight: 400;
+
+  &:hover {
+  	color: grey;
+  }
 }
 
 .social-link {

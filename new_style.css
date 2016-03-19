@@ -462,7 +462,10 @@ footer {
 
 .site-footer a {
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: 400; }
+  .site-footer a:hover {
+    color: grey; }
 
 .social-link {
   padding: 0 5px; }
