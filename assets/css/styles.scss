@@ -37,16 +37,22 @@
 }
 
 .work__homepage, 
-.notes__homepage {
+.notes__homepage, 
+.instagram__homepage {
   margin: 40px auto;
   text-align: center;
 }
 
-.work__homepage {
-    border-bottom: 1px solid grey;
-    border-top: 1px solid grey;
-    padding: 40px 0;
+.work__homepage, 
+.notes__homepage {
+  border-bottom: 1px solid grey;
 }
+
+.work__homepage {
+  border-top: 1px solid grey;
+  padding: 40px 0;
+}
+
 .work-item,
 .notes-item {
   margin-bottom: 15px;
