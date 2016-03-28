@@ -86,7 +86,18 @@ em {
 }
 
 blockquote {
-  padding: 0 70px 0 20px;
-  border-left: 5px solid #191919;
-  margin: 0 0 0 60px;
+  color: $green;
+  font-weight: 700 !important;
+  width: 120%;
+  margin-left: -10%;
+  font-size: 30px;
+
+  p {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  a {
+    color: $green;
+  }
 }

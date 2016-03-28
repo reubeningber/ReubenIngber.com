@@ -1,6 +1,6 @@
 .site-header {
   margin: 20px auto;
-  border-bottom: 1px solid $black;
+  border-bottom: 5px solid $black;
 }
 
 .site-nav {
@@ -54,6 +54,7 @@
   
   &:hover {
     text-decoration: none;
-    border-bottom: 1px solid $black;
+    border-bottom: 2px solid $green;
+    color: $green;
   }
 }

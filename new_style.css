@@ -289,9 +289,16 @@ em {
   font-style: italic; }
 
 blockquote {
-  padding: 0 70px 0 20px;
-  border-left: 5px solid #191919;
-  margin: 0 0 0 60px; }
+  color: #2EC4B6;
+  font-weight: 700 !important;
+  width: 120%;
+  margin-left: -10%;
+  font-size: 30px; }
+  blockquote p {
+    font-size: 22px;
+    font-weight: 700; }
+  blockquote a {
+    color: #2EC4B6; }
 
 .site-header,
 footer,
@@ -381,7 +388,7 @@ html, body {
 
 .site-header {
   margin: 20px auto;
-  border-bottom: 1px solid #011627; }
+  border-bottom: 5px solid #011627; }
 
 .site-nav {
   float: left;
@@ -443,7 +450,8 @@ html, body {
   font-weight: 400; }
   .site-nav__link:hover {
     text-decoration: none;
-    border-bottom: 1px solid #011627; }
+    border-bottom: 2px solid #2EC4B6;
+    color: #2EC4B6; }
 
 footer {
   margin-top: 25px;
