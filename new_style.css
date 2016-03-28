@@ -266,14 +266,14 @@ p {
 
 a {
   font-family: 'Open Sans', sans-serif;
-  color: #191919;
+  color: #011627;
   font-weight: 700; }
 
 a:hover {
   color: grey; }
 
 a.active {
-  color: #191919; }
+  color: #011627; }
 
 strong {
   font-weight: 700; }
@@ -381,7 +381,7 @@ html, body {
 
 .site-header {
   margin: 20px auto;
-  border-bottom: 1px solid #191919; }
+  border-bottom: 1px solid #011627; }
 
 .site-nav {
   float: left;
@@ -424,7 +424,7 @@ html, body {
   font-weight: 700; }
   .site-title__name a,
   .site-title__name_small a {
-    color: #191919; }
+    color: #011627; }
 
 .site-title__name_small {
   font-size: 24px;
@@ -443,11 +443,11 @@ html, body {
   font-weight: 400; }
   .site-nav__link:hover {
     text-decoration: none;
-    border-bottom: 1px solid #191919; }
+    border-bottom: 1px solid #011627; }
 
 footer {
   margin-top: 25px;
-  background: #191919;
+  background: #011627;
   color: white; }
 
 .site-footer {
@@ -483,7 +483,7 @@ footer {
       margin-left: 0; } }
 
 .entry-item {
-  border-bottom: 1px solid #191919;
+  border-bottom: 1px solid #011627;
   margin-bottom: 10px !important; }
   .entry-item:last-child {
     border-bottom: none; }
@@ -493,9 +493,9 @@ footer {
   padding: 0 0 5px 0; }
   .entry-item__title a {
     border-bottom: 2px solid #ffffff;
-    color: #191919; }
+    color: #011627; }
     .entry-item__title a:hover {
-      border-bottom: 2px solid #191919; }
+      border-bottom: 2px solid #011627; }
 
 .entry-item__intro {
   font-family: 'Open Sans', sans-serif;
@@ -548,7 +548,7 @@ footer {
   .timePosted a {
     color: grey; }
     .timePosted a:hover {
-      color: #191919;
+      color: #011627;
       text-decoration: underline; }
 
 .section-heading {
@@ -652,7 +652,7 @@ footer {
   margin: 0;
   padding: 0; }
   .work-item__title a {
-    color: #191919;
+    color: #011627;
     text-decoration: none; }
 
 .work-item__intro {
@@ -688,14 +688,14 @@ footer {
 .more-link {
   width: auto;
   text-align: center;
-  background: #191919;
+  background: #011627;
   color: #fff;
   padding: 5px 10px;
   border-radius: 3px;
   border: 1px solid black; }
   .more-link:hover {
     background: #fff;
-    color: #191919;
+    color: #011627;
     border: 1px solid black; }
 
 .entry-nav a:hover {
