@@ -22,10 +22,13 @@ footer {
   font-weight: 400;
 
   &:hover {
-  	color: grey;
+  	color: $green;
   }
 }
 
 .social-link {
+  font-size: 20px;
   padding: 0 5px;
+
+
 }

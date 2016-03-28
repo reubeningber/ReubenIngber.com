@@ -1,14 +1,17 @@
 .site-header {
   margin: 20px auto;
   border-bottom: 5px solid $black;
+  padding: 20px 0;
 }
 
 .site-nav {
   @include span-columns(8);
+  padding: 15px 0 0 0;
+  text-align: right;
 
   @include media(max-width $tablet) {
     @include span-columns(12);
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -17,7 +20,7 @@
 
   @include media(max-width $tablet) {
     @include span-columns(12);
-    text-align: left;
+    text-align: center;
   }
   
 
@@ -28,7 +31,9 @@
   font-size: 32px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  
+  margin: 0;
+  padding: 0;
+
   a {
     color: $black;
   }
@@ -38,11 +43,6 @@
   font-size: 24px;
   font-weight: 400;
   text-transform: lowercase;
-}
-
-.site-nav {
-  padding: 15px 0 0 0;
-  text-align: right;
 }
 
 .site-nav__link {
@@ -57,4 +57,9 @@
     border-bottom: 2px solid $green;
     color: $green;
   }
+
+  @include media(max-width $mobile) {
+    padding: 0 2px 2px 2px;
+  }
 }
+
