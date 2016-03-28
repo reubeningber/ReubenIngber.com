@@ -159,16 +159,16 @@
 .more-link {
   width: auto;
   text-align: center;
-  background: $black;
+  background: $green;
   color: #fff;
   padding: 5px 10px;
   border-radius: 3px;
-  border: 1px solid black;
+  border: 1px solid $green;
 
   &:hover {
     background: #fff;
-    color: $black;
-    border: 1px solid black;
+    color: $green;
+    border: 1px solid $green;
   }
 }
 

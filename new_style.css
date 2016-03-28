@@ -300,6 +300,10 @@ blockquote {
   blockquote a {
     color: #2EC4B6; }
 
+mark {
+  background-color: #2EC4B6;
+  color: black; }
+
 .site-header,
 footer,
 .main-content {
@@ -696,15 +700,15 @@ footer {
 .more-link {
   width: auto;
   text-align: center;
-  background: #011627;
+  background: #2EC4B6;
   color: #fff;
   padding: 5px 10px;
   border-radius: 3px;
-  border: 1px solid black; }
+  border: 1px solid #2EC4B6; }
   .more-link:hover {
     background: #fff;
-    color: #011627;
-    border: 1px solid black; }
+    color: #2EC4B6;
+    border: 1px solid #2EC4B6; }
 
 .entry-nav a:hover {
   text-decoration: underline; }
