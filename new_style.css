@@ -289,7 +289,7 @@ em {
   font-style: italic; }
 
 blockquote {
-  color: #2EC4B6;
+  color: #011627;
   font-weight: 700 !important;
   width: 120%;
   margin-left: -10%;
@@ -537,11 +537,11 @@ footer {
     background: whitesmoke;
     text-align: center; }
 
-.instgram-feed__item {
-  width: 49%;
-  float: left; }
-  .instgram-feed__item:nth-child(odd) {
-    margin-right: 2%; }
+.instagram-feed__item {
+  float: left;
+  width: 20%; }
+  .instagram-feed__item img {
+    width: 100%; }
 
 .tweet-item {
   border-bottom: 1px solid grey;
@@ -579,6 +579,9 @@ footer {
 .work__homepage {
   border-top: 1px solid grey;
   padding: 40px 0; }
+
+.notes__homepage {
+  padding: 0 0 40px 0; }
 
 .work-item,
 .notes-item {

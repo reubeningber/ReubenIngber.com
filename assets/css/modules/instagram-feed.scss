@@ -1,9 +1,9 @@
-.instgram-feed__item {
-	width: 49%;
+.instagram-feed__item {
 	float: left;
+	width: percentage(1/5);
 
-	&:nth-child(odd) {
-		margin-right: 2%;
+	img {
+		width: 100%;
 	}
 }
 
