@@ -29,11 +29,13 @@
 
 
 	a {
-	border-bottom: 2px solid #ffffff;
-		color: $black;
+	border-bottom: 2px solid transparent;
+	color: $black;
+
 		
 		&:hover {
-			border-bottom: 2px solid $black;
+			color: $green;
+			border-bottom: 2px solid $green;
 		}
 	}
 

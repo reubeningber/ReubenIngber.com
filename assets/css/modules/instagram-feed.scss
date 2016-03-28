@@ -1,9 +1,14 @@
 .instagram-feed__item {
 	float: left;
 	width: percentage(1/5);
+	@include transition(all .5s ease-in-out);
 
 	img {
 		width: 100%;
+	}
+
+	&:hover {
+		opacity: .75;
 	}
 }
 

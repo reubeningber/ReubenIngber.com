@@ -14,22 +14,22 @@
 
         <title>{{ site.title }} | {{ current.title }} </title>
 
-        <meta name="description" content="Reuben Ingber is a front end web developer and designer, currently looking for full time &amp; freelance opportunities" />
+        <meta name="description" content="Reuben Ingber is a front end web developer and designer." />
 
         <!-- Twitter Card data -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@reubeningber">
         <meta name="twitter:creator" content="@reubeningber">
-        <meta name="twitter:title" content="Reuben A. Ingber | Front-End Web Developer">
-        <meta name="twitter:description" content="Reuben Ingber is a front end web developer and designer, currently looking for full time &amp; freelance opportunities">
+        <meta name="twitter:title" content="{{ site.title }} | {{ current.title }}r">
+        <meta name="twitter:description" content="Reuben Ingber is a front end web developer and designer">
         <meta name="twitter:image:src" content="http://www.reubeningber.com/assets/img/reuben.jpg">
 
         <!-- Open Graph data -->
-        <meta property="og:title" content="Reuben A. Ingber | Front-End Web Developer" />
+        <meta property="og:title" content="{{ site.title }} | {{ current.title }}" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="http://reubeningber.com" />
         <meta property="og:image" content="http://www.reubeningber.com/assets/img/reuben.jpg" />
-        <meta property="og:description" content="Reuben Ingber is a front end web developer and designer, currently looking for full time &amp; freelance opportunities" /> 
+        <meta property="og:description" content="Reuben Ingber is a front end web developer and designer" /> 
         <meta property="og:site_name" content="Reuben A. Ingber | Front-End Web Developer" />
 
         <!-- Favicon  -->
@@ -51,14 +51,8 @@
         </div>
 		{% include 'includes/footer' %}
 
-<!-- 
-		<script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
-		<script src="assets/js/vendor/masonry.pkgd.min.js"></script>
-		<script src="/assets/js/vendor/jquery.magnific-popup.min.js"></script>
- -->
         <script src="/assets/js/vendor/jquery-1.11.1.min.js"></script>
         <script src="/assets/js/vendor/instafeed.js"></script>
-        <script src="/assets/js/vendor/twit-fetcher.min.js"></script>
 		<script src="/assets/js/scripts.js"></script>
     </body>
 </html>

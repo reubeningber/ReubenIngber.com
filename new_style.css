@@ -214,7 +214,8 @@ picture {
   max-width: 100%; }
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  color: #011627; }
 
 h1,
 h2,
@@ -262,15 +263,16 @@ p {
   margin-bottom: 20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 17px; }
+  font-size: 17px;
+  color: #011627; }
 
 a {
   font-family: 'Open Sans', sans-serif;
-  color: #011627;
+  color: #2EC4B6;
   font-weight: 700; }
 
 a:hover {
-  color: grey; }
+  color: #011627; }
 
 a.active {
   color: #011627; }
@@ -302,7 +304,8 @@ blockquote {
 
 mark {
   background-color: #2EC4B6;
-  color: black; }
+  color: #011627;
+  font-weight: 700; }
 
 .site-header,
 footer,
@@ -471,6 +474,8 @@ footer {
   padding: 50px 0; }
   .site-footer:last-child {
     margin-right: 0; }
+  .site-footer p {
+    color: #2EC4B6; }
 
 .site-footer a {
   color: white;
@@ -504,10 +509,11 @@ footer {
   margin: 0 0 5px 0;
   padding: 0 0 5px 0; }
   .entry-item__title a {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid transparent;
     color: #011627; }
     .entry-item__title a:hover {
-      border-bottom: 2px solid #011627; }
+      color: #2EC4B6;
+      border-bottom: 2px solid #2EC4B6; }
 
 .entry-item__intro {
   font-family: 'Open Sans', sans-serif;
@@ -539,9 +545,14 @@ footer {
 
 .instagram-feed__item {
   float: left;
-  width: 20%; }
+  width: 20%;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
   .instagram-feed__item img {
     width: 100%; }
+  .instagram-feed__item:hover {
+    opacity: .75; }
 
 .tweet-item {
   border-bottom: 1px solid grey;

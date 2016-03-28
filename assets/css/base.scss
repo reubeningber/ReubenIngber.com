@@ -1,7 +1,7 @@
 // Base Styles
 body {
   font-family: 'Open Sans', sans-serif;
-
+  color: $black;
 }
 
 h1, 
@@ -53,16 +53,17 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 17px;
+  color: $black;
 }
 
 a {
   font-family: 'Open Sans', sans-serif;
-  color: $black;  
+  color: $green;  
   font-weight: 700;
 }
 
 a:hover {
-  color: grey;
+  color: $black;
 }
 
 a.active {
@@ -105,5 +106,6 @@ blockquote {
 
 mark {
   background-color: $green;
-  color: black
+  color: $black;
+  font-weight: 700;
 }
