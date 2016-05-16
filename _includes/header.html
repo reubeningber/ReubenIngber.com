@@ -1,12 +1,14 @@
 <header class="site-header">
-  <div class="site-title">
-    <h1 class="site-title__name"><a href="/">Reuben Ingber</a>{% for page in site.pages offset:1 %}{% if url contains page.url %}<span class="site-title__name_small">/{{ page.title}}</span>{% endif %}{% endfor %}</h1>
+  <div class="site-header-container">
+    <div class="site-title">
+      <h1 class="site-title__name"><a href="/">Reuben Ingber</a>{% for page in site.pages offset:1 %}{% if url contains page.url %}<span class="site-title__name_small">/{{ page.title}}</span>{% endif %}{% endfor %}</h1>
+    </div>
+    <nav class="site-nav">
+      <ul class="ui-list inline-list">
+      {% for page in site.pages offset:1 %}
+        <li><a class="site-nav__link" href="{{ page.url }}">{{ page.title }}</a></li>
+      {% endfor %}  
+      </ul>
+    </nav>
   </div>
-  <nav class="site-nav">
-    <ul class="ui-list inline-list">
-    {% for page in site.pages offset:1 %}
-      <li><a class="site-nav__link" href="{{ page.url }}">{{ page.title }}</a></li>
-    {% endfor %}  
-    </ul>
-  </nav>
 </header>

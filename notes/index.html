@@ -4,8 +4,17 @@
 
   {% for post in posts %}
     <article class="entry-item notes-index">
-      <span class="entry-item__meta">{{post.date | date: "%b %d, %Y"}}</span>
       <header><h2 class="entry-item__title"><a href="{{post.url}}">{{post.title}}</a></h2></header>
+      <span class="entry-item__meta">{{post.date | date: "%b %d, %Y"}}</span>
+      {% if post.taxonomy['tags'] %} 
+      <span class="entry-item__meta"> 
+          | Tagged: 
+          {% for tag in post.taxonomy['tags'] %}
+            <a href="{{tag.url}}">{{tag.value}}</a>{% if forloop.last == false %}, {% endif %}
+          {% endfor %}
+        </span>
+      {% endif %}
+        
       {% if post.meta['Intro'] %}
       <p class="entry-item__intro">{{post.meta['Intro']}}</p>
       {% endif %}

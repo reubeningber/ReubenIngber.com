@@ -311,14 +311,14 @@ mark {
   color: #011627;
   font-weight: 700; }
 
-.site-header,
-footer,
+.site-header-container,
+.site-footer-container,
 .main-content {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  .site-header::after,
-  footer::after,
+  .site-header-container::after,
+  .site-footer-container::after,
   .main-content::after {
     clear: both;
     content: "";
@@ -398,7 +398,9 @@ html, body {
         margin-right: 0; } }
 
 .site-header {
-  margin: 20px auto;
+  margin: 0 auto 20px 0;
+  background: #011627;
+  color: #2EC4B6;
   border-bottom: 5px solid #011627;
   padding: 20px 0; }
 
@@ -447,16 +449,17 @@ html, body {
   padding: 0; }
   .site-title__name a,
   .site-title__name_small a {
-    color: #011627; }
+    color: #2EC4B6; }
 
 .site-title__name_small {
   font-size: 24px;
   font-weight: 400;
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  color: #fff; }
 
 .site-nav__link {
   padding: 0 5px 5px 5px;
-  color: black;
+  color: #2EC4B6;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400; }
@@ -471,25 +474,19 @@ html, body {
 footer {
   margin-top: 25px;
   background: #011627;
-  color: white; }
+  color: white;
+  text-align: center; }
 
-.site-footer {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
-  margin-left: 17.05961%;
+.site-footer-container {
   padding: 50px 0; }
-  .site-footer:last-child {
-    margin-right: 0; }
-  .site-footer p {
+  .site-footer-container p {
     color: #2EC4B6; }
 
-.site-footer a {
+.site-footer-container a {
   color: white;
   text-decoration: none;
   font-weight: 400; }
-  .site-footer a:hover {
+  .site-footer-container a:hover {
     color: #2EC4B6; }
 
 .social-link {
@@ -535,7 +532,7 @@ footer {
   color: grey;
   font-size: 12px;
   font-family: 'Open Sans', sans-serif;
-  display: block;
+  display: inline-block;
   margin: 0 0 10px 0; }
 
 .grid {

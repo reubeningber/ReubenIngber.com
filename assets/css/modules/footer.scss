@@ -4,11 +4,10 @@ footer {
 	margin-top: 25px;
 	background: $black;
 	color: white;
+  text-align: center;
 }
 
-.site-footer {
-  @include span-columns(8);
-  @include shift(2);
+.site-footer-container {
   padding: 50px 0;
 
   p {
@@ -16,7 +15,7 @@ footer {
   }
 }
 
-.site-footer a {
+.site-footer-container a {
   color: white;
   text-decoration: none;
   font-weight: 400;
