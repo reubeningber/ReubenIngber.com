@@ -589,16 +589,8 @@ footer {
   margin: 40px auto;
   text-align: center; }
 
-.work__homepage,
-.notes__homepage {
-  border-bottom: 1px solid grey; }
-
 .work__homepage {
-  border-top: 1px solid grey;
   padding: 40px 0; }
-
-.notes__homepage {
-  padding: 0 0 40px 0; }
 
 .work-item,
 .notes-item {
