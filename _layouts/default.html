@@ -42,7 +42,9 @@
                 <div class="main-content-inner">
                     {{ content }}        
                 </div>
-                {% include 'includes/home_instagram' %}
+                {% if url == '/' %}
+                    {% include 'includes/home_instagram' %}
+                {% endif %}
             </div>
 
             <div class="push"></div>

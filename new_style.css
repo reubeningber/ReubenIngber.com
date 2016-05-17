@@ -295,7 +295,8 @@ blockquote {
   font-weight: 700 !important;
   width: 120%;
   margin-left: -10%;
-  font-size: 30px; }
+  font-size: 30px;
+  text-align: justify; }
   blockquote p {
     font-size: 22px;
     font-weight: 700; }

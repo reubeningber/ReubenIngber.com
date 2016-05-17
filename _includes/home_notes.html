@@ -3,14 +3,16 @@
 	{% for post in site.pages.notes.posts | limit: 2 %}
 	<article class="notes-item{% if forloop.last == true %} last{% endif %}">
 	  <h3 class="notes-item__title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-	  <span class="notes-item__meta">
-	  	{{ post.date | date: '%B %d, %Y'}} &nbsp; 
-		{% for tagset in post.taxonomy %}
-			{% for tag in post.tagset %}
-				<a href="{{tag.url}}">{{tag.value}}</a>
-			{% endfor %}
-		{% endfor %}
-	  </span>
+	  <span class="entry-item__meta">{{post.date | date: "%b %d, %Y"}}</span>
+      {% if post.taxonomy['tags'] %} 
+      <span class="entry-item__meta"> 
+          | Tagged: 
+          {% for tag in post.taxonomy['tags'] %}
+            <a href="{{tag.url}}">{{tag.value}}</a>{% if forloop.last == false %}, {% endif %}
+          {% endfor %}
+        </span>
+      {% endif %}
+        <br>
 	  <a href="{{ post.url }}" class="notes-item__btn">Read More <i class="fa fa-caret-right"></i></a>
 	</article>
 	{% endfor %}
