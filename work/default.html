@@ -1,12 +1,11 @@
 {% capture content %}
-   <article class="entry-item">
-	  <header>
-	  	<h1 class="entry-item__title"><a href="{{url}}">{{title}}</a></h1>
+<article class="entry-item">
+	<header class="entry-item__header">
+		<h1 class="entry-item__title">{{title}}</h1>
 	  	<h2 class="entry-item__intro">{{meta['Intro']}}</h2>
-	  </header>
-
-	  {{body}}
-	</article>
+	</header>
+	 {{body}}
+</article>
 
 	<nav class="entry-nav">
         {% if previous %}<a href="{{ previous.url }}" class="prev-link">Previous: {{previous.title}}</a>{% endif %}

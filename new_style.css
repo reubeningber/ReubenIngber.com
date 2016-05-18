@@ -514,6 +514,9 @@ footer {
   .entry__hero img {
     width: 100%; }
 
+p img {
+  width: 100%; }
+
 .entry-item {
   border-bottom: 1px solid #011627;
   margin-bottom: 10px !important; }
