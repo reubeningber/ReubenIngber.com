@@ -1,6 +1,6 @@
 <aside class="right-rail__module">
 	<header class="right-rail__module-header">
-		<h4>Recent Notes</h4>
+		<h4>Recent</h4>
 	</header>
 	<ul class="right-rail__module-list ui-list">
 		{% for post in site.pages.notes.posts | limit: 5 %}
@@ -12,4 +12,6 @@
 		</li>
 		{% endfor %}	
 	</ul>
+
+	<a href="/notes">View More</a>
 </aside>
