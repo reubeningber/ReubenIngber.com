@@ -90,10 +90,13 @@ em {
 blockquote {
   color: $black;
   font-weight: 700 !important;
-  width: 120%;
-  margin-left: -10%;
+  width: 80%;
+  margin-left: 10%;
   font-size: 30px;
   text-align: justify;
+  border-left: 3px solid $green;
+  padding-left: 20px;
+  line-height: 1.2;
 
   p {
     font-size: 22px;
@@ -109,6 +112,7 @@ blockquote {
     margin-left: 0;
   }
 }
+    
 
 mark {
   background-color: $green;

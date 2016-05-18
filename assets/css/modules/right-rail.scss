@@ -1,0 +1,42 @@
+.right-rail__module-header {
+	border-bottom: 3px solid $green;
+	margin-bottom: 15px;
+	
+	h4 {
+		line-height: 1;
+		margin-bottom: 3px;
+	}
+}
+
+.right-rail__module-list {
+
+}
+
+.right-rail__moudle-list-item {
+	margin-bottom: 5px;
+	border-bottom: 3px solid transparent;
+
+	&:hover {
+		border-bottom: 3px solid $green;
+	}
+}
+
+.right-rail__moudle-list-item__title {
+	margin-bottom: 0;
+
+	a {
+		display: block;
+		color: $black;
+
+
+		&:hover {
+			color: $green;
+		}
+	}
+}
+
+.right-rail__moudle-list-item__meta {
+	color: grey; 
+	font-size: 10px;
+	display: block;
+}

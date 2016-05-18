@@ -1,7 +1,21 @@
+{% capture header %}
+	<header class="entry-item__header">
+		<h1 class="entry-item__title"><a href="{{url}}">{{title}}</a></h1>
+	 	<span class="entry-item__meta">{{date | date: "%b %d, %Y"}}</span>
+	 </header>
+
+	{% if meta['hero-image'] %}
+		<div class="entry__hero">
+			<img src="{{ meta['hero-image'] }}" alt="">
+		</div>
+	{% endif %}
+
+
+{% endcapture %}
+
 {% capture content %}
    <article class="entry-item">
-	  <header><h1 class="entry-item__title"><a href="{{url}}">{{title}}</a></h1></header>
-	  <span class="entry-item__meta">{{date | date: "%b %d, %Y"}}</span>
+	  
 	  {{body}}
 	</article>	
 
@@ -10,4 +24,4 @@
         {% if next %}<a href="{{ next.url }}" class="next-link">Next</a>{% endif %}
     </nav>
 {% endcapture %}
-{% include 'layouts/default' %}
+{% include 'layouts/notes' %}

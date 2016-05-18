@@ -5,19 +5,25 @@
 }
 
 .main-content-inner {
-	@include span-columns(8);
-  	@include shift(2);
+	@include span-columns(10);
+  	@include shift(1);
 
-  	@include media(max-width $tablet) {
-  	 	@include span-columns(10);
-  	 	@include shift(1);
-  	}
   	
   	@include media(max-width $mobile) {
   	 	@include span-columns(12);
   	 	@include shift(0);
  	    padding: 0 10px;
   	}
+}
+
+.notes .main-content-inner {
+  .content-body {
+    @include span-columns(9);
+  }
+
+  .right-rail {
+    @include span-columns(3);
+  }
 }
 
 .notes, 

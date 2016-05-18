@@ -1,0 +1,15 @@
+<aside class="right-rail__module">
+	<header class="right-rail__module-header">
+		<h4>Recent Notes</h4>
+	</header>
+	<ul class="right-rail__module-list ui-list">
+		{% for post in site.pages.notes.posts | limit: 5 %}
+		<li class="right-rail__moudle-list-item{% if forloop.last == true %} last{% endif %}">
+			<article >
+			  <h5 class="right-rail__moudle-list-item__title"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+			  <span class="right-rail__moudle-list-item__meta">{{post.date | date: "%b %d, %Y"}}</span>
+			</article>
+		</li>
+		{% endfor %}	
+	</ul>
+</aside>
